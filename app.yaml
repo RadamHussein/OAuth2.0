@@ -1,0 +1,25 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
+
+- url: /.*
+  script: main.app
+  secure: always
+
+#- url: /OAuth
+#  script: main.app
+#  secure: always
+
+#- url: /OAuth/.*
+#  script: main.app
+#  secure: always
+
+#- url: /(.*)
+#  static_files: www/\1
+#  upload: www/(.*)
+#  application_readable: true

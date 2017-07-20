@@ -1,0 +1,30 @@
+<html>
+  <head>
+  	<meta charset="UTF-8">
+    <title>Results Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/results.css">
+  </head>
+<html>
+  <body>
+    <header>
+      <h1>You must be...</h1>
+    </header>
+    <div class="button-container">
+      <h2>{{ first_name }} {{ last_name }}</h2>
+      <a href="{{ url }}">{{ url }}</a>
+      <h4>State: {{ state }}</h4>
+    </div>
+    <div class="page-content">
+      <p>
+        And there you have it! The information above was returned from the Google Plus API after a
+        series of requests were made following an OAuth 2.0 flow. You should see your first and last
+        name as you have them set in your Google Plus profile, as well as a link to your Google Plus
+        profile. Finally, the "State" that you see is the randomly generated value used to acquire
+        an initial authorization code from Google. That code was then exchanged for a token, which was
+        again exchanged for the Google Plus account information you see above.
+      </p>
+    </div>
+  </body>
+</html>
