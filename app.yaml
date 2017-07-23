@@ -7,19 +7,15 @@ handlers:
   static_files: www/index.html
   upload: www/index.html
 
-- url: /.*
+- url: /OAuth
   script: main.app
   secure: always
 
-#- url: /OAuth
-#  script: main.app
-#  secure: always
+- url: /OAuth/.*
+  script: main.app
+  secure: always
 
-#- url: /OAuth/.*
-#  script: main.app
-#  secure: always
-
-#- url: /(.*)
-#  static_files: www/\1
-#  upload: www/(.*)
-#  application_readable: true
+- url: /(.*)
+  static_files: www/\1
+  upload: www/(.*)
+  application_readable: true
