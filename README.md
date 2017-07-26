@@ -4,7 +4,7 @@ https://oauth-174216.appspot.com/
 
 CS 496 - OAuth 2.0 Implementation
 
-In this assignment you will implement a OAuth 2.0 Server Side flow without using a 3rd party OAuth library. The course materials demonstrate what all the requests look like, you will need to implement them in your application so that it can access protected resources on the users Google+ account.
+In this assignment you will implement a OAuth 2.0 Server Side flow without using a 3rd party OAuth library. You will need to implement the requests in your application so that it can access protected resources on the users Google+ account.
 
 To do so you will need to generally implement the following pieces of functionality:
 
